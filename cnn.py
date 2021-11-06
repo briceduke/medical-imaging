@@ -65,7 +65,7 @@ cw = dict(zip(np.unique(train.classes), weights))
 cnn.fit(train, epochs=25, validation_data=valid, class_weight=cw, callbacks=cb_list)
 
 # Save model
-cnn.save('./models')
+cnn.save('./models/cnn')
 
 # Test accuracy
 accuracy = cnn.evaluate(test)
